@@ -2,7 +2,12 @@
   /* 상단 중앙에 위치하는 텍스트 */
   
 
-  
+  		.top-text{
+			display: absolute;
+			font-family: 'Nanum Gothic'
+			
+			
+		}
 		body {
 		     font-family: 'Nanum Gothic', sans-serif;
 		     display: flex;
@@ -11,7 +16,7 @@
 		     justify-content: center;
 		     height: 100vh;
 		     margin: 0;
-		     background-color: blueviolet;
+		     background-color: white;
 		 }
 
 
