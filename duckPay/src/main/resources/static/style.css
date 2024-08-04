@@ -4,19 +4,177 @@
 
   		.top-text{
 			display: absolute;
+			margin-top:50px;
 			font-family: 'Nanum Gothic'
 			
 			
 		}
+		h1  {
+			color:black;
+			font-size: 1.6em;
+			
+		}
+		
 		body {
 		     font-family: 'Nanum Gothic', sans-serif;
 		     display: flex;
 		     flex-direction: column;
 		     align-items: center;
-		     justify-content: center;
-		     height: 100vh;
-		     margin: 0;
-		     background-color: white;
+		     
+		     height: 120vh;
+		     background-color: #DDDD;
 		 }
 
 
+		 .container{
+            text-align: center;
+            background-color: white;
+            padding: 40px; /*박스 여백크기*/
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(24, 199, 205, 0.1);
+            margin: 0px; /* 컨테이너 사이의 간격을 설정 */
+            margin-top: 10px;/*상단 텍스트와 컨테이너 사이 간격 조정 */
+            width: 300px; /* 너비 설정 */
+            height: 260px; /* 높이 설정 */
+            display: block;
+            flex-direction: column; /** 한 박스에서 글자 정렬 방법 */
+			text-align:left;
+			justify-content: row;
+            align-items: left;
+			font-size: 13px;
+
+        }
+
+		input[type="text"]  {
+			display: block;
+			width: 100%;
+			color:black;
+			font-size: 1.1em;
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+			height: 45px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+			
+        }
+
+	
+		
+		.signup {
+			display: block;
+            padding: 8px 20px;
+            font-size: 1em;
+            color: #27344a;
+			height:30px;
+            background-color:#8ba0c2;
+            border-radius: 40px;
+            text-decoration: none;
+            transition: background-color 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'IBM Plex Sans KR';
+            font-weight: bold;
+        }
+		
+
+		.link-container {
+			text-align: center;
+			margin-top: 20px;
+		}
+		
+		.link-container a {
+			margin: 0 10px;
+			text-align: center;
+			color:gray;
+			
+			font-size: 0.88em;
+		}
+		
+	
+
+		.login {
+				display: block;
+				width: 100%;
+				font-size: 1.08em;
+				color: #27344a;
+				background-color: #f5f5f5;
+				padding: 15px;
+				text-align: center;
+				margin-top:30px;
+				width: 100%;
+				height: 50px;
+				box-sizing: border-box;
+				border: 1px solid #ccc;
+				text-decoration: none;  /* 밑줄 제거 */
+				border-radius: 8px;
+				font-weight: bold;
+			
+		}
+
+		.회원가입{
+			display: block;
+			width: 100%;
+			font-size: 1.08em;
+            color: white;
+			text-align: center;
+            padding: 15px;
+			background-color:#1e90ff;
+            margin: -5px 0;
+            width: 100%;
+			height: 50px;
+            box-sizing: border-box;
+			text-decoration: none;  /* 밑줄 제거 */
+            border: 1px solid #ccc;
+            border-radius: 8px;
+			font-weight: bold;
+		}
+
+
+		p {
+			margin-top: 20px;
+			font-size:0.8em;
+			color:black;
+		}
+
+
+		.container2 {
+    		text-align: center;
+            padding: 40px; /*박스 여백크기*/
+            border-radius: 10px;
+            margin: 10px; /* 컨테이너 사이의 간격을 설정 */
+            width: 300px; /* 너비 설정 */
+            height: 70px; /* 높이 설정 */
+            display: block;
+            flex-direction: column; /** 한 박스에서 글자 정렬 방법 */
+			text-align:left;
+			justify-content: row;
+            align-items: left;
+			font-size: 0.9em;
+            color: #27344a;
+
+
+		}
+
+
+        .button {
+            display: inline-block;
+            margin-bottom: 15px;
+            padding: 8px 20px;
+			font-size: 1em;
+            color: black;
+            background-color:white;
+            border-radius: 40px;
+            text-decoration: none;
+            transition: background-color 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'IBM Plex Sans KR';
+            font-weight: bold;
+			
+        }
