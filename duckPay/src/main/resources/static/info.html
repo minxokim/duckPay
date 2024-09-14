@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홈 화면</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            width: 100%;
+            padding: 15px;
+            background-color: #ffcc00;
+            color: #27344a;
+            text-align: center;
+            font-size: 1.5em;
+            position: relative;
+        }
+        
+        .logout-btn {
+            position: absolute;
+            right: 30px;
+            top: 15px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+        }
+        
+        .logout-btn img {
+            width: 24px; /* 아이콘 크기 조정 */
+            height: 24px;
+        }
+        
+        .content {
+            flex: 1;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+        
+        .welcome {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            text-align: center;
+        }
+        
+        .asset-box {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .asset-box h2 {
+            margin: 0 0 10px 0;
+            font-size: 1.5em;
+            color: #27344a;
+        }
+        
+        .asset-box p {
+            margin: 10px 0;
+            font-size: 1.5em;
+            color: gray;
+        }
+        
+        .asset-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        
+        .asset-buttons button {
+            flex: 1;
+            margin: 0 5px;
+            padding: 15px;
+            background-color: #2f4f4f; /* 버튼 색깔을 #2f4f4f로 설정 */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 0.9em;
+        }
+        
+        .asset-buttons button:hover {
+            background-color: #1e3d3d; /* 버튼 hover 시 색상 변경 */
+        }
+        
+        .navbar {
+            width: 100%;
+            background-color: #ffffff;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+        
+        .navbar a {
+            color: #2f4f4f;
+            text-decoration: none;
+            font-size: 0.9em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .navbar a img {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+        }
+        
+        .navbar a:hover {
+            color: #2f4f4f;
+        }
+        
+        .navbar a span {
+            margin-top: 5px;
+        }
+        
+        footer {
+            display: none; /* 하단 네비게이션을 추가하였기 때문에 footer를 숨김 처리 */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        DuckPay
+        <button class="logout-btn" onclick="location.href='#';">
+            <img src="login.png" alt="로그아웃">
+        </button>
+    </header>
+
+    <div class="content">
+   
+        <div class="asset-box">
+            <h2>내 페이머니</h2>
+            <p>5,000,000원</p>
+            <div class="asset-buttons">
+                <button onclick="location.href='#';">충전</button>
+                <button onclick="location.href='#';">송금</button>
+                <button onclick="location.href='#';">결제</button>
+            </div>
+        </div>
+
+        <div class="menu">
+            <a href="#">내 프로필</a>
+            <a href="#">설정</a>
+            <a href="#">알림</a>
+            <a href="#">로그아웃</a>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <a href="#">
+            <img src="menu.png" class="menu1" alt="메뉴">        
+        </a>
+
+        <a href="#">
+            <img src="home.png" class="home" alt="홈">
+        </a>
+
+        <a href="#">
+            <img src="money.png" class="money" alt="돈">        
+        </a>
+        <a href="#">
+            <img src="mypage.webp" class="mypage" alt="마이페이지">
+        </a>
+    </div>
+
+</body>
+</html>
